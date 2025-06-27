@@ -571,6 +571,7 @@
         "FIELD_HEADER_DRIVE_NAME"      : "驱动器名称：",
         "FIELD_HEADER_DRIVE_PATH"      : "虚拟盘路径：",
         "FIELD_HEADER_ENABLE_AUDIO_INPUT"         : "启用音频输入（话筒）：",
+        "FIELD_HEADER_ENABLE_WEBCAM"              : "启用网络摄像头：",
         "FIELD_HEADER_ENABLE_DESKTOP_COMPOSITION" : "启用桌面合成效果（Aero）：",
         "FIELD_HEADER_ENABLE_DRIVE"               : "启用虚拟驱动器：",
         "FIELD_HEADER_ENABLE_FONT_SMOOTHING"      : "启用字体平滑（ClearType）：",

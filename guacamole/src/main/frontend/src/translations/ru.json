@@ -436,6 +436,7 @@
         "FIELD_HEADER_DRIVE_NAME"                 : "Название диска:",
         "FIELD_HEADER_DRIVE_PATH"                 : "Путь для диска:",
         "FIELD_HEADER_ENABLE_AUDIO_INPUT"         : "Включить звуковой вход (микрофон):",
+        "FIELD_HEADER_ENABLE_WEBCAM"              : "Включить веб-камеру:",
         "FIELD_HEADER_ENABLE_DESKTOP_COMPOSITION" : "Включить композитор рабочего стола (Aero):",
         "FIELD_HEADER_ENABLE_DRIVE"               : "Включить диск:",
         "FIELD_HEADER_ENABLE_FONT_SMOOTHING"      : "Включить сглаживание шрифтов (ClearType):",

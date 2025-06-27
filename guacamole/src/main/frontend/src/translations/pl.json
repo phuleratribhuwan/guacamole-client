@@ -491,6 +491,7 @@
         "FIELD_HEADER_DRIVE_NAME"       : "Nazwa dysku:",
         "FIELD_HEADER_DRIVE_PATH"       : "Ścieżka dysku:",
         "FIELD_HEADER_ENABLE_AUDIO_INPUT"         : "Włącz wejście dźwięku (mikrofon):",
+        "FIELD_HEADER_ENABLE_WEBCAM"              : "Włącz kamerę internetową:",
         "FIELD_HEADER_ENABLE_DESKTOP_COMPOSITION" : "Włącz kompozycje pulpitu (Aero):",
         "FIELD_HEADER_ENABLE_DRIVE"               : "Włącz dysk:",
         "FIELD_HEADER_ENABLE_FONT_SMOOTHING"      : "Włącz wygładzanie czcionek (ClearType):",

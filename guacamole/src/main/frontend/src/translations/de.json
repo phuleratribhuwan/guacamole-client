@@ -565,6 +565,7 @@
         "FIELD_HEADER_DRIVE_NAME"       : "Laufwerksname:",
         "FIELD_HEADER_DRIVE_PATH"       : "Laufwerkspfad:",
         "FIELD_HEADER_ENABLE_AUDIO_INPUT"         : "Audioeingänge (Mikrofon) aktivieren:",
+        "FIELD_HEADER_ENABLE_WEBCAM"              : "Webcam aktivieren:",
         "FIELD_HEADER_ENABLE_DESKTOP_COMPOSITION" : "Desktop Gestaltung (Aero) aktivieren:",
         "FIELD_HEADER_ENABLE_DRIVE"               : "Austauschlaufwerk aktivieren:",
         "FIELD_HEADER_ENABLE_FONT_SMOOTHING"      : "Schriftartglättung (ClearType) aktivieren:",
