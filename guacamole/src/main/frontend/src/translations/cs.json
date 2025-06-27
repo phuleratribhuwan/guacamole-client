@@ -574,6 +574,7 @@
         "FIELD_HEADER_DRIVE_NAME"       : "Název jednotky:",
         "FIELD_HEADER_DRIVE_PATH"       : "Cesta na disku:",
         "FIELD_HEADER_ENABLE_AUDIO_INPUT"         : "Povolit zvukový vstup (mikrofon):",
+        "FIELD_HEADER_ENABLE_WEBCAM"              : "Povolit webkameru:",
         "FIELD_HEADER_ENABLE_DESKTOP_COMPOSITION" : "Povolit kompozici pracovní plochy (Aero):",
         "FIELD_HEADER_ENABLE_DRIVE"               : "Povolit jednotku:",
         "FIELD_HEADER_ENABLE_FONT_SMOOTHING"      : "Povolit vyhlazení písma (ClearType):",

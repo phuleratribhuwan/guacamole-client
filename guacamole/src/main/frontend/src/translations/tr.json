@@ -598,6 +598,7 @@
         "FIELD_HEADER_DRIVE_NAME"       : "Sürücü adı:",
         "FIELD_HEADER_DRIVE_PATH"       : "Sürücü yolu:",
         "FIELD_HEADER_ENABLE_AUDIO_INPUT"         : "Ses girişini etkinleştir (mikrofon):",
+        "FIELD_HEADER_ENABLE_WEBCAM"              : "Web kamerasını etkinleştir:",
         "FIELD_HEADER_ENABLE_DESKTOP_COMPOSITION" : "Masaüstü kompozisyonunu etkinleştir (Aero):",
         "FIELD_HEADER_ENABLE_DRIVE"               : "Sürücüyü etkinleştir:",
         "FIELD_HEADER_ENABLE_FONT_SMOOTHING"      : "Yazı tipi yumuşatmayı etkinleştir (ClearType):",

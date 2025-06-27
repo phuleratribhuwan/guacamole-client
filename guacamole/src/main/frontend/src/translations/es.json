@@ -471,6 +471,7 @@
         "FIELD_HEADER_DRIVE_NAME"        : "Unidad:",
         "FIELD_HEADER_DRIVE_PATH"        : "Ruta Unidad:",
         "FIELD_HEADER_ENABLE_AUDIO_INPUT"         : "Activar entrada de audio (Microfono):",
+        "FIELD_HEADER_ENABLE_WEBCAM"              : "Activar cámara web:",
         "FIELD_HEADER_ENABLE_DESKTOP_COMPOSITION" : "Activar composición de escritorio (Aero):",
         "FIELD_HEADER_ENABLE_DRIVE"               : "Activar unidad:",
         "FIELD_HEADER_ENABLE_FONT_SMOOTHING"      : "Activar suavizado de fuente (ClearType):",

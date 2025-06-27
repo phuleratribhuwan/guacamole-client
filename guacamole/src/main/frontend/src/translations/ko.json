@@ -464,6 +464,7 @@
         "FIELD_HEADER_DRIVE_NAME"       : "드라이브 이름:",
         "FIELD_HEADER_DRIVE_PATH"       : "드라이브 주소:",
         "FIELD_HEADER_ENABLE_AUDIO_INPUT"         : "오디오 입력 활성화 (마이크):",
+        "FIELD_HEADER_ENABLE_WEBCAM"              : "웹캠 사용:",
         "FIELD_HEADER_ENABLE_DESKTOP_COMPOSITION" : "바탕화면 구성 활성화 (Aero):",
         "FIELD_HEADER_ENABLE_DRIVE"               : "드라이브 활성화:",
         "FIELD_HEADER_ENABLE_FONT_SMOOTHING"      : "글꼴 다듬기 활성화 (ClearType):",
