@@ -66,3 +66,21 @@ hosted at:
     
     https://issues.apache.org/jira/browse/GUACAMOLE/
 
+------------------------------------------------------------
+ Enabling webcam redirection
+------------------------------------------------------------
+
+Guacamole supports redirecting your local webcam to the remote session if
+requested. This capability is disabled by default. To enable webcam
+redirection, add the following parameter to your connection configuration:
+
+    enable-webcam:true
+
+When a connection using this parameter is established, your browser will
+prompt for permission to access the webcam. Permission must be granted for
+the remote system to receive video. Because the webcam stream will be
+accessible to the remote server, you should only enable this option if you
+trust both the Guacamole server and the browser in use. Additionally, webcam
+redirection is only functional if the Guacamole server includes compatible
+support for this feature.
+
