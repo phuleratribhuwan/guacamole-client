@@ -88,6 +88,12 @@ public abstract class TunnelRequest {
     public static final String VIDEO_PARAMETER = "GUAC_VIDEO";
 
     /**
+     * The name of the parameter specifying the mimetype that will be used for
+     * video input streaming from the client.
+     */
+    public static final String VIDEO_INPUT_PARAMETER = "GUAC_VIDEO_INPUT";
+
+    /**
      * The name of the parameter specifying one supported image mimetype. This
      * will normally appear multiple times within a single tunnel request -
      * once for each mimetype.
@@ -314,6 +320,18 @@ public abstract class TunnelRequest {
      */
     public List<String> getVideoMimetypes() {
         return getParameterValues(VIDEO_PARAMETER);
+    }
+
+    /**
+     * Returns the mimetype declared for use with video input streaming within
+     * the tunnel request.
+     *
+     * @return
+     *     The mimetype declared for video input streaming, or null if no
+     *     mimetype was specified.
+     */
+    public String getVideoInputMimetype() {
+        return getParameter(VIDEO_INPUT_PARAMETER);
     }
 
     /**

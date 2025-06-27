@@ -305,6 +305,15 @@ angular.module('client').factory('ManagedClient', ['$rootScope', '$injector',
     ManagedClient.AUDIO_INPUT_MIMETYPE = 'audio/L16;rate=44100,channels=2';
 
     /**
+     * The mimetype of video data to be sent along the Guacamole connection if
+     * video input is supported.
+     *
+     * @constant
+     * @type String
+     */
+    ManagedClient.VIDEO_INPUT_MIMETYPE = 'video/webm';
+
+    /**
      * Returns a promise which resolves with the string of connection
      * parameters to be passed to the Guacamole client during connection. This
      * string generally contains the desired connection ID, display resolution,
@@ -356,6 +365,9 @@ angular.module('client').factory('ManagedClient', ['$rootScope', '$injector',
         guacVideo.supported.forEach(function(mimetype) {
             connectString += "&GUAC_VIDEO=" + encodeURIComponent(mimetype);
         });
+
+        connectString += "&GUAC_VIDEO_INPUT=" +
+            encodeURIComponent(ManagedClient.VIDEO_INPUT_MIMETYPE);
 
         // Add image mimetypes to connect string
         guacImage.getSupportedMimetypes().then(function supportedMimetypesKnown(mimetypes) {
