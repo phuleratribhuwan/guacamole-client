@@ -229,6 +229,11 @@
                     "options" : [ "true" ]
                 },
                 {
+                    "name"    : "enable-webcam",
+                    "type"    : "BOOLEAN",
+                    "options" : [ "true" ]
+                },
+                {
                     "name"    : "enable-printing",
                     "type"    : "BOOLEAN",
                     "options" : [ "true" ]
