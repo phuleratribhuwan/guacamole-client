@@ -305,6 +305,15 @@ angular.module('client').factory('ManagedClient', ['$rootScope', '$injector',
     ManagedClient.AUDIO_INPUT_MIMETYPE = 'audio/L16;rate=44100,channels=2';
 
     /**
+     * The mimetype of video data to be sent along the Guacamole connection if
+     * webcam streaming is supported.
+     *
+     * @constant
+     * @type String
+     */
+    ManagedClient.VIDEO_INPUT_MIMETYPE = 'video/webm';
+
+    /**
      * Returns a promise which resolves with the string of connection
      * parameters to be passed to the Guacamole client during connection. This
      * string generally contains the desired connection ID, display resolution,
@@ -401,6 +410,36 @@ angular.module('client').factory('ManagedClient', ['$rootScope', '$injector',
         // audio stream is closed
         else
             recorder.onclose = requestAudioStream.bind(this, client);
+
+    };
+
+    /**
+     * Requests the creation of a new video stream, recorded from the user's
+     * local webcam. If webcam input is supported by the connection, a video
+     * stream will be created which will remain open until the remote desktop
+     * requests that it be closed. If the video stream is successfully created
+     * but is later closed, a new video stream will automatically be
+     * established to take its place. The mimetype used for all video streams
+     * produced by this function is defined by ManagedClient.VIDEO_INPUT_MIMETYPE.
+     *
+     * @param {Guacamole.Client} client
+     *     The Guacamole.Client for which the video stream is being requested.
+     */
+    var requestVideoStream = function requestVideoStream(client) {
+
+        // Create new video stream, associating it with a WebcamRecorder
+        var stream = client.createVideoStream(ManagedClient.VIDEO_INPUT_MIMETYPE);
+        var recorder = Guacamole.WebcamRecorder.getInstance(stream,
+                ManagedClient.VIDEO_INPUT_MIMETYPE);
+
+        // If creation of the WebcamRecorder failed, simply end the stream
+        if (!recorder)
+            stream.sendEnd();
+
+        // Otherwise, ensure that another video stream is created after this
+        // video stream is closed
+        else
+            recorder.onclose = requestVideoStream.bind(this, client);
 
     };
 
@@ -530,6 +569,11 @@ angular.module('client').factory('ManagedClient', ['$rootScope', '$injector',
 
                         // Begin streaming audio input if possible
                         requestAudioStream(client);
+
+                        // Begin streaming webcam input if enabled
+                        var params = ManagedClient.getArgumentModel(managedClient);
+                        if (params['enable-webcam'] === true || params['enable-webcam'] === 'true')
+                            requestVideoStream(client);
 
                         // Update thumbnail with initial display contents
                         ManagedClient.updateThumbnail(managedClient);
