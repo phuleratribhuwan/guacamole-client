@@ -306,7 +306,6 @@ angular.module('client').factory('ManagedClient', ['$rootScope', '$injector',
 
     /**
      * The mimetype of video data to be sent along the Guacamole connection if
-     * webcam streaming is supported.
      *
      * @constant
      * @type String
@@ -365,6 +364,9 @@ angular.module('client').factory('ManagedClient', ['$rootScope', '$injector',
         guacVideo.supported.forEach(function(mimetype) {
             connectString += "&GUAC_VIDEO=" + encodeURIComponent(mimetype);
         });
+
+        connectString += "&GUAC_VIDEO_INPUT=" +
+            encodeURIComponent(ManagedClient.VIDEO_INPUT_MIMETYPE);
 
         // Add image mimetypes to connect string
         guacImage.getSupportedMimetypes().then(function supportedMimetypesKnown(mimetypes) {
