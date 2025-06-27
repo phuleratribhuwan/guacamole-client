@@ -280,6 +280,7 @@
         "FIELD_HEADER_DOMAIN"          : "Domene:",
         "FIELD_HEADER_DPI"             : "Oppløsning (DPI):",
         "FIELD_HEADER_DRIVE_PATH"      : "Sti til disk:",
+        "FIELD_HEADER_ENABLE_WEBCAM"   : "Aktiver webkamera:",
         "FIELD_HEADER_ENABLE_DESKTOP_COMPOSITION" : "Aktiver skrivebordssammensetning (Aero):",
         "FIELD_HEADER_ENABLE_DRIVE"               : "Aktiver disk:",
         "FIELD_HEADER_ENABLE_FONT_SMOOTHING"      : "Aktiver fontutjevning (ClearType):",

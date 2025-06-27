@@ -497,6 +497,7 @@
         "FIELD_HEADER_DRIVE_NAME"       : "Nom de la unitat:",
         "FIELD_HEADER_DRIVE_PATH"       : "Ruta de la unitat:",
         "FIELD_HEADER_ENABLE_AUDIO_INPUT"         : "Habilita l'entrada d'àudio (micròfon):",
+        "FIELD_HEADER_ENABLE_WEBCAM"              : "Habilita la webcam:",
         "FIELD_HEADER_ENABLE_DESKTOP_COMPOSITION" : "Habilita la composició d'escriptori (Aero):",
         "FIELD_HEADER_ENABLE_DRIVE"               : "Habilita la unitat:",
         "FIELD_HEADER_ENABLE_FONT_SMOOTHING"      : "Habilita el suavització de tipus de lletra (ClearType):",

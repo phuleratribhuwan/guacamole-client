@@ -425,6 +425,7 @@
         "FIELD_HEADER_DRIVE_NAME"      : "ドライブ名:",
         "FIELD_HEADER_DRIVE_PATH"      : "ドライブパス:",
         "FIELD_HEADER_ENABLE_AUDIO_INPUT"         : "入力オーディオ（マイク）の有効化:",
+        "FIELD_HEADER_ENABLE_WEBCAM"              : "ウェブカメラを有効化:",
         "FIELD_HEADER_ENABLE_DESKTOP_COMPOSITION" : "デスクトップコンポジション(Aero)の有効化:",
         "FIELD_HEADER_ENABLE_DRIVE"               : "ドライブの有効化:",
         "FIELD_HEADER_ENABLE_FONT_SMOOTHING"      : "クリアタイプフォントの有効化:",
